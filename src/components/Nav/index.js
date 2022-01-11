@@ -21,7 +21,7 @@ const Nav = ({ currentPage, setCurrentPage }) => {
     <>
       <div className="header-logo">
         <img src={Logo} className="img-logo" alt="logo" />
-        <h1>Joseduardo</h1>
+        <h1>Gokul Kowligi</h1>
       </div>
       <nav>
         <div className="nav-item" onClick={() => setCurrentPage("About Me")}>
