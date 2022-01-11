@@ -11,7 +11,10 @@ const Nav = ({ currentPage, setCurrentPage }) => {
   }, [currentPage]);
 
   const handlerOpenResume = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open(
+      "https://gkowligi1392.github.io/react-portfolio/resume.pdf",
+      "_blank"
+    );
   };
 
   return (
