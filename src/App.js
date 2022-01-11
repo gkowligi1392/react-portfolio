@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import About from "./components/About";
+import ContactMe from "./components/ContactMe";
+import Nav from "./components/Nav";
+import Portfolio from "./components/Portfolio";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("About Me");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </header>
-    </div>
+      <main>
+        {currentPage === "aboutMe" && <About />}
+        {currentPage === "portfolio" && <Portfolio />}
+        {currentPage === "contactMe" && <ContactMe />}
+      </main>
+      <footer>@gkowligi1392</footer>
+    </>
   );
 }
 
