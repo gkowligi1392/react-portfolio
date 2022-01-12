@@ -14,9 +14,9 @@ function App() {
         <Nav currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </header>
       <main>
-        {currentPage === "aboutMe" && <About />}
-        {currentPage === "portfolio" && <Portfolio />}
-        {currentPage === "contactMe" && <ContactMe />}
+        {currentPage === "About Me" && <About />}
+        {currentPage === "Portfolio" && <Portfolio />}
+        {currentPage === "Contact Me" && <ContactMe />}
       </main>
       <footer>@gkowligi1392</footer>
     </>

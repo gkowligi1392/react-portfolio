@@ -4,7 +4,7 @@ const About = () => {
     return (
       <section>
         <div className='page-body'>
-          <img src='{ImageAboutMe}' alt='about me' className='img-body' />
+          <img src={ImageAboutMe} alt='about me' className='img-body' />
           <h1>Who am I?</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
